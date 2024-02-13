@@ -15,6 +15,7 @@ def get_user_choice():
         return None, None
     return choice, adj
 
+
 def fetch_images(query):
     downloader.download(query, limit=5, output_dir='dataset', adult_filter_off=True, force_replace=False, timeout=60,
                         verbose=True)
